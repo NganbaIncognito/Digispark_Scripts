@@ -15,7 +15,7 @@ void setup() {
   DigiKeyboard.print("chrome.exe " + url + ""); // dynamic url for testing
   DigiKeyboard.sendKeyStroke(KEY_ENTER); //start chrome with url
   DigiKeyboard.delay(3000);
-  for(int i = 0; i < 4 ; i++){
+  for (int i = 0; i < 4 ; i++) {
     DigiKeyboard.sendKeyStroke(KEY_TAB); // amount of tabs we need to perform to get to 'Install'
     DigiKeyboard.delay(50);
   };
@@ -25,11 +25,12 @@ void setup() {
   DigiKeyboard.sendKeyStroke(0x50); //goto confirm, left arrow
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER); //confirm
+  DigiKeyboard.delay(1500);
+  DigiKeyboard.sendKeyStroke(KEY_ESC);
   DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(MOD_ALT_LEFT, KEY_F4); //close chrome
+  DigiKeyboard.sendKeyStroke(KEY_F4, MOD_ALT_LEFT); //close chrome
   DigiKeyboard.sendKeyStroke(0); //release all keys, just to be safe
-
-  }
+}
 
 void loop() {
   // put your main code here, to run repeatedly. We dont need this.
