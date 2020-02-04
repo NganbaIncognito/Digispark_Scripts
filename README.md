@@ -1,10 +1,10 @@
 # Collection for the BadUSB Digispark
 
-Collection of duckyscripts i have used for awareness campaign 2019 @ Howest Brugge
+Collection of duckyscripts i have used for my awareness campaign 2019 @ Howest Brugge
 
-### Installing
+### Requirements
 
-CommingSoonTM
+Replace keyboard.h in the arduino installation directory
 
 ## Authors
 
